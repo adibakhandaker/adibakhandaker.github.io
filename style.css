@@ -1,0 +1,153 @@
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafb;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.profile-pic {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #4a90e2;
+  box-shadow: 0 4px 12px rgba(74,144,226,0.3);
+  margin-bottom: 15px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.name {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  transition: color 0.3s ease;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  margin-top: 6px;
+  font-style: italic;
+  transition: color 0.3s ease;
+}
+
+/* Sections */
+.section {
+  margin-bottom: 30px;
+}
+
+.section h2 {
+  font-size: 1.8rem;
+  color: #4a90e2;
+  border-bottom: 2px solid #4a90e2;
+  padding-bottom: 6px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Lists */
+ul {
+  list-style: inside disc;
+  padding-left: 10px;
+}
+
+ul li {
+  padding: 6px 0;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+/* Contact links */
+.contact p a {
+  color: #4a90e2;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact p a:hover {
+  color: #1a5fb4;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+  .name {
+    font-size: 2rem;
+  }
+  .profile-pic {
+    width: 110px;
+    height: 110px;
+  }
+}
+
+/* ===== Dark Mode ===== */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #ddd;
+  }
+
+  .container {
+    background-color: #1e1e1e;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.9);
+  }
+
+  .profile-pic {
+    border-color: #5aa0ff;
+    box-shadow: 0 4px 12px rgba(90,160,255,0.7);
+  }
+
+  .name {
+    color: #e0e0e0;
+  }
+
+  .subtitle {
+    color: #bbb;
+  }
+
+  .section h2 {
+    color: #5aa0ff;
+    border-color: #5aa0ff;
+  }
+
+  ul li {
+    color: #ccc;
+  }
+
+  .contact p a {
+    color: #5aa0ff;
+  }
+
+  .contact p a:hover {
+    color: #82b1ff;
+  }
+}
